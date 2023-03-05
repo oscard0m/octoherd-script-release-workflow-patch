@@ -1,0 +1,28 @@
+{
+  "name": "octoherd-script-release-workflow-patch",
+  "version": "0.0.0-development",
+  "type": "module",
+  "exports": "./script.js",
+  "bin": {
+    "octoherd-script-release-workflow-patch": "./cli.js"
+  },
+  "description": "Adds an extra step in release.yml GitHub workflow to patch an issue with npm 9 and Pike",
+  "scripts": {
+    "start": "node cli.js",
+    "test": "node script.js"
+  },
+  "repository": "https://github.com/oscard0m/octoherd-script-release-workflow-patch",
+  "keywords": [
+    "octoherd-script"
+  ],
+  "author": "Oscar Dominguez <dominguez.celada@gmail.com> (https://www.oscardom.dev)",
+  "license": "ISC",
+  "dependencies": {
+    "@octoherd/cli": "^3.6.3"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}
